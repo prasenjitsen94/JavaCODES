@@ -1,6 +1,6 @@
 package smriti_practice;
 
-public class Practice4 {
+public class Practice7 {
 
 	public static void main(String[] args) {
 		String str="Smriti Saha";
