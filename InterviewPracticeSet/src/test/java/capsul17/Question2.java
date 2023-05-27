@@ -16,13 +16,25 @@ public class Question2 {
 			a[i]=sc.nextInt();
 		}
 		
+		int count=0;
+		
 		for(int ele : a)
 		{
 			if(ele % 6==0)
 			{
 				System.out.println(ele);
 			}
+			else
+			{
+				count++;
+			}
 		}
+		
+		if(count == a.length)
+		{
+			System.out.println("No is not divisible");
+		}
+		
 		
 		
 	}
