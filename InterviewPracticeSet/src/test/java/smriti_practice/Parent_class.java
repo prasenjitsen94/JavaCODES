@@ -8,7 +8,7 @@ public   class Parent_class {
 
 	}
 	
-	public   void m1(String str)
+	public static  void m1(String str)
 	{
 		System.out.println("I am in parent class");
 	}

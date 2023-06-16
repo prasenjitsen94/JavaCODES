@@ -6,17 +6,17 @@ public class Child_Class extends Parent_class {
 		Child_Class obj= new Child_Class();
 		
 		obj.m1("Rimi");
-		obj.callingParent();
+//		obj.callingParent();
 
 	}
 	
-	public  void callingParent()
-	{
-		super.m1("Smriti");
-		System.out.println(super.a);
-	}
+//	public  void callingParent()
+//	{
+//		super.m1("Smriti");
+//		System.out.println(super.a);
+//	}
 	
-	public  void m1(String str)
+	public static void m1(String str)
 	{
 		System.out.println("I am in child class");
 	}
