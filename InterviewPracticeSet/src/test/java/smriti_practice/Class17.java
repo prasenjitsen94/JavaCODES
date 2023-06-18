@@ -10,9 +10,13 @@ public class Class17 {
 		
 		//int number=145;
 		 
-		int result=special(number);
+		int addition=special(number);
 		
-		if(result==number)
+		boolean res=check(number,addition);
+		
+		
+		
+		if(res==true)
 		{
 			System.out.println("special number");
 		}
@@ -46,6 +50,21 @@ public class Class17 {
 		return sum;
 		
 		
+	}
+	
+	public static boolean check(int n, int sum)
+	{
+		boolean result;
+		if(n==sum)
+		{
+			result=true;
+		}
+		else
+		{
+			result= false;
+		}
+		
+		return result;
 	}
 
 }
