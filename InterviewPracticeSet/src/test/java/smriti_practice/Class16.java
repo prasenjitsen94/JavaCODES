@@ -7,41 +7,53 @@ public class Class16 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		
-		System.out.println("Enter a number: ");
-		String number=sc.nextLine();
+		System.out.println("Enter a word: ");
+		String word=sc.nextLine();
 		
-		//int number=145;
+		String reverese=palindrome(word);
 		
-		int n=Integer.valueOf(number);
-		 
-		int rev=palindrome(n);
+		boolean res=check(word,reverese);
 		
-		if(rev==n)
+		if(res)
 		{
-			System.out.println("Palindrome number");
+			System.out.println("Plaindrome");
 		}
 		else
 		{
-			System.out.println("not a palindrome number");
+			System.out.println("Not a plaindrome");
 		}
+		
+		
 		
 	}
 	
-	public static int palindrome(int n)
+	public static String  palindrome(String str)
 	{
-		int num=Integer.valueOf(n);
-		int rev=0;
-		//int temp=n;
-		int ld;
+		str=str.trim().toLowerCase().replaceAll("\\s+"," ");
+		String rev="";
 		
-		while(num!=0)
+		for(int i=0; i<str.length(); i++)
 		{
-			ld=num%10;
-			rev=rev*10+ld;
-			num=num/10;	
+			char ch=str.charAt(i);
+			rev=ch+rev;
 		}
 		
 		return rev;
+	}
+	
+	public static boolean check(String str,String rev)
+	{
+		boolean result;
+		if(rev.equals(str))
+		{
+			result =true;
+		}
+		else
+		{
+			result= false;
+		}
+		
+		return result;
 	}
 
 }
