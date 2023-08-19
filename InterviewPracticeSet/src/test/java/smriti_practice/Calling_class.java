@@ -1,14 +1,16 @@
 package smriti_practice;
 
-public class Calling_class {
+public class Calling_Class {
 
 	public static void main(String[] args) {
-		Private_class obj= new Private_class();
+		Private_Class obj= new Private_Class();
 		
-		System.out.println("Old Value: " + obj.getNum());
-		obj.setNum(30);
-		System.out.println("New Value: " + obj.getNum());
-
+		System.out.println("Old number" + obj.getNum());
+		
+		obj.setNum(20);
+		
+		System.out.println("New number" + obj.getNum());
+		
 	}
 
 }
